@@ -14,7 +14,7 @@ const FirstPage = ({navigation,route}) => {
         style={{
             width:300,
             padding:10,
-            backgroundColor:"white",
+            backgroundColor:"#FF5733",
             marginTop:15,
             marginBottom:10
         }}
