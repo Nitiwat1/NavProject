@@ -3,13 +3,12 @@ import React from "react"
 
 const FirstPage = ({navigation,route}) => {
 
-    const [postText, setPostText] = React.useState("");
     
   return (
     <View style={styles.container}>
-        <Text style={styles.heading}>Thai-Nichi Institute of Technology</Text>
-        <Text styles={styles.textStyle}>Please Insert Your Name To Pass It To Second Screen</Text>
-        <TextInput
+        <Text style={styles.heading}>This is the First Page</Text>
+        
+        {/* <TextInput
         placeholder='Name Here'
         style={{
             width:300,
@@ -20,10 +19,16 @@ const FirstPage = ({navigation,route}) => {
         }}
         onChangeText={setPostText}
         value={postText}
-        />
+        /> */}
         <Button 
-      title='Go Next'
+      title='GO TO SECOND PAGE'
       onPress={()=>navigation.navigate('Second Page',
+      {postText}
+      )}
+      />
+        <Button 
+      title='GO TO THIRD PAGE'
+      onPress={()=>navigation.navigate('Third Page',
       {postText}
       )}
       />

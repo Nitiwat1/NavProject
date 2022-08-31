@@ -1,13 +1,25 @@
 import { StyleSheet, Text, View, Button } from 'react-native'
 import React from "react"
 
-const SecondPage = ({ route }) => {
+const SecondPage = ({ navigation, route }) => {
+
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={styles.heading}>Thai-Nichi Institute of Technology</Text>
-        <Text style={styles.textStyle}>Values Passed From First Page : {route.params?.postText}</Text>
-      </View>
+
+      <Text style={styles.heading}>This is the Second Page</Text>
+      <Button
+        title='GO TO FIRST PAGE'
+        onPress={() => navigation.navigate('First Page',
+          { postText }
+        )}
+      />
+      <Button
+        title='GO TO THIRD PAGE'
+        onPress={() => navigation.navigate('Third Page',
+          { postText }
+        )}
+      />
+
     </View>
   );
 };
