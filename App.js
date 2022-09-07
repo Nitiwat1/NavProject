@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, TextInput , Image} from "react-native";
+import { StyleSheet, Text, View, Button, SafeAreaView , Image} from "react-native";
 import React from "react";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import {
@@ -8,7 +8,7 @@ import {
     DrawerItem,
 } from "@react-navigation/drawer";
 import HomeScreen from "./Screens/HomeScreen";
-import { SafeAreaView } from "react-native-safe-area-context";
+
 
 const MyTheme = {
     ...DefaultTheme,
